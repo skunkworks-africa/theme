@@ -1,0 +1,35 @@
+{
+  "source_repository": "skunkworks-africa/www",
+  "source_commit": "c71e2f71d4d48e5c7d575e7927cc966c0e4df2fb",
+  "assets": [
+    {
+      "name": "logo-black.svg",
+      "source_url": "https://raw.githubusercontent.com/skunkworks-africa/www/c71e2f71d4d48e5c7d575e7927cc966c0e4df2fb/assets/logo-black.svg"
+    },
+    {
+      "name": "logo-white.svg",
+      "source_url": "https://raw.githubusercontent.com/skunkworks-africa/www/c71e2f71d4d48e5c7d575e7927cc966c0e4df2fb/assets/logo-white.svg"
+    },
+    {
+      "name": "logo-black.png",
+      "source_url": "https://raw.githubusercontent.com/skunkworks-africa/www/c71e2f71d4d48e5c7d575e7927cc966c0e4df2fb/assets/logo-black.png"
+    },
+    {
+      "name": "logo-white.png",
+      "source_url": "https://raw.githubusercontent.com/skunkworks-africa/www/c71e2f71d4d48e5c7d575e7927cc966c0e4df2fb/assets/logo-white.png"
+    },
+    {
+      "name": "favicon-black.ico",
+      "source_url": "https://raw.githubusercontent.com/skunkworks-africa/www/c71e2f71d4d48e5c7d575e7927cc966c0e4df2fb/assets/favicon-black.ico"
+    },
+    {
+      "name": "favicon-black.png",
+      "source_url": "https://raw.githubusercontent.com/skunkworks-africa/www/c71e2f71d4d48e5c7d575e7927cc966c0e4df2fb/assets/favicon-black.png"
+    },
+    {
+      "name": "favicon-black_350px.png",
+      "source_url": "https://raw.githubusercontent.com/skunkworks-africa/www/c71e2f71d4d48e5c7d575e7927cc966c0e4df2fb/assets/favicon-black_350px.png"
+    }
+  ],
+  "policy": "Reference pinned originals. Preserve aspect ratio; no recolouring or distortion. Choose contrast-appropriate variant."
+}
