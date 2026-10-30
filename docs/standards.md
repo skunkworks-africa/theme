@@ -20,3 +20,6 @@ WCAG 2.2 AA targets: normal text contrast >=4.5:1; large text >=3:1; keyboard fo
 
 ## Change governance
 Update the shared design system first, review through pull requests, tag releases, then roll out versioned changes to country sites. Preserve source attribution and do not automatically deploy design changes to every reseller without site-specific verification.
+
+## Country theme synchronisation
+Country repositories sync versioned corporate CSS from `dist/` using a scheduled and manually dispatchable GitHub Actions workflow that opens a review PR. HTML pages, contacts, country labels, CNAME, localized policies and Shopify destinations are never overridden. Each site must run local conformance checks on PRs before merging. The parent brand mark is shared; the country label next to it must refer to the actual location.
