@@ -1,0 +1,54 @@
+name: Country production HTTP smoke checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'countries.json'
+      - 'scripts/smoke-country-sites.py'
+      - '.github/workflows/country-production-smoke.yml'
+  pull_request:
+    paths:
+      - 'countries.json'
+      - 'scripts/smoke-country-sites.py'
+      - '.github/workflows/country-production-smoke.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '45 6,18 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  inventory-validation:
+    name: Validate eight-country inventory (offline)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/smoke-country-sites.py --validate-only
+      - run: python -m py_compile scripts/smoke-country-sites.py
+
+  live-http:
+    name: Check live national website endpoints
+    if: github.event_name != 'pull_request'
+    needs: [inventory-validation]
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check public HTTPS and country identity without credentials
+        run: python scripts/smoke-country-sites.py
+      - name: Retain the exact regional incident evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: country-http-smoke-evidence
+          path: artifacts/country-production-smoke.json
+          if-no-files-found: warn
+          retention-days: 30

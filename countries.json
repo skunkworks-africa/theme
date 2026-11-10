@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "authority": "skunkworks-africa/theme",
+  "reference": "skunkworks-africa/www",
+  "checked": "2026-10-30",
+  "countries": [
+    {
+      "code": "AU",
+      "country": "Australia",
+      "owner": "skunkworks-aus",
+      "repository": "skunkworks-aus/www",
+      "locale": "en-AU",
+      "canonical": "https://www.skunkworksau.com.au/",
+      "headerLabel": "Australia",
+      "themeMode": "corporate",
+      "domainMigration": "https://www.skunkworksau.au/ pending verified DNS/HTTPS"
+    },
+    {
+      "code": "CM",
+      "country": "Cameroon",
+      "owner": "skunkworks-cameroon",
+      "repository": "skunkworks-cameroon/www",
+      "locale": "en-CM",
+      "canonical": "https://skunkworks-cameroon.github.io/www/",
+      "headerLabel": "Cameroon",
+      "themeMode": "corporate",
+      "additionalLocales": [
+        "fr-CM"
+      ]
+    },
+    {
+      "code": "MW",
+      "country": "Malawi",
+      "owner": "skunkworks-malawi",
+      "repository": "skunkworks-malawi/www",
+      "locale": "en-MW",
+      "canonical": "https://skunkworks.mw/",
+      "headerLabel": "Malawi",
+      "themeMode": "corporate"
+    },
+    {
+      "code": "NG",
+      "country": "Nigeria",
+      "owner": "skunkworks-nigeria",
+      "repository": "skunkworks-nigeria/www",
+      "locale": "en-NG",
+      "canonical": "https://skunkworks-nigeria.github.io/www/",
+      "headerLabel": "Nigeria",
+      "themeMode": "corporate"
+    },
+    {
+      "code": "PT",
+      "country": "Portugal",
+      "owner": "skunkworks-portugal",
+      "repository": "skunkworks-portugal/www",
+      "locale": "pt-PT",
+      "canonical": "https://skunkworks-portugal.github.io/www/",
+      "headerLabel": "Portugal",
+      "themeMode": "tokens-only"
+    },
+    {
+      "code": "SZ",
+      "country": "Eswatini / Swaziland",
+      "owner": "skunkworks-swaziland",
+      "repository": "skunkworks-swaziland/www",
+      "locale": "en-SZ",
+      "canonical": "https://skunkworks-swaziland.github.io/www/",
+      "headerLabel": "Swaziland",
+      "themeMode": "corporate"
+    },
+    {
+      "code": "UG",
+      "country": "Uganda",
+      "owner": "skunkworks-uganda",
+      "repository": "skunkworks-uganda/www",
+      "locale": "en-UG",
+      "canonical": "https://www.skunkworks.ug/",
+      "headerLabel": "Uganda",
+      "themeMode": "corporate"
+    },
+    {
+      "code": "US",
+      "country": "United States",
+      "owner": "skunkworks-usa",
+      "repository": "skunkworks-usa/www",
+      "locale": "en-US",
+      "canonical": "https://skunkworksus.com/",
+      "headerLabel": "USA",
+      "themeMode": "corporate"
+    }
+  ]
+}
