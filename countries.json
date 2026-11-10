@@ -64,10 +64,9 @@
       "owner": "skunkworks-swaziland",
       "repository": "skunkworks-swaziland/www",
       "locale": "en-SZ",
-      "canonical": "https://www.skunkworks.sz/",
+      "canonical": "https://skunkworks-swaziland.github.io/www/",
       "headerLabel": "Swaziland",
-      "themeMode": "corporate",
-      "domainMigration": "DNS verification and HTTPS pending; coordinate with skunkworks-swaziland/www PR #6"
+      "themeMode": "corporate"
     },
     {
       "code": "UG",
