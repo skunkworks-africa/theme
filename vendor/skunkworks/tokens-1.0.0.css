@@ -1,0 +1,31 @@
+/* Skunkworks Design System 1.0.0 — semantic tokens; use roles, not raw colours. */
+:root {
+  color-scheme: light;
+  --sk-font: Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --sk-mono: 'Cascadia Code', Consolas, monospace;
+  --sk-bg: #ffffff; --sk-surface: #f2f2f2; --sk-layer: #fafafa;
+  --sk-text: #111111; --sk-muted: #595959; --sk-border: #d4d4d4;
+  --sk-control-border: #767676; --sk-action: #111111; --sk-on-action: #ffffff;
+  --sk-hover: #e5e5e5; --sk-focus: #005fcc;
+  --sk-success: #176b3a; --sk-danger: #b42318; --sk-warning: #805600;
+  --sk-space-1: 4px; --sk-space-2: 8px; --sk-space-3: 12px; --sk-space-4: 16px;
+  --sk-space-6: 24px; --sk-space-8: 32px; --sk-space-12: 48px; --sk-space-16: 64px;
+  --sk-radius: 8px; --sk-duration: 160ms; --sk-ease: cubic-bezier(.2,0,.2,1);
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --sk-bg: #111111; --sk-surface: #202020; --sk-layer: #171717;
+  --sk-text: #f5f5f5; --sk-muted: #b8b8b8; --sk-border: #454545;
+  --sk-control-border: #999999; --sk-action: #f5f5f5; --sk-on-action: #111111;
+  --sk-hover: #303030; --sk-focus: #91caff;
+  --sk-success: #7ad99e; --sk-danger: #ffb4ab; --sk-warning: #f2cc70;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark; --sk-bg: #111111; --sk-surface: #202020; --sk-layer: #171717;
+    --sk-text: #f5f5f5; --sk-muted: #b8b8b8; --sk-border: #454545;
+    --sk-control-border: #999999; --sk-action: #f5f5f5; --sk-on-action: #111111;
+    --sk-hover: #303030; --sk-focus: #91caff; --sk-success: #7ad99e;
+    --sk-danger: #ffb4ab; --sk-warning: #f2cc70;
+  }
+}
