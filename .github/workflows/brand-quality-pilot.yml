@@ -5,8 +5,10 @@ on:
     branches: [main]
 permissions:
   contents: read
+# Reviewable verification against brand main's independently passing CI baseline.
+# The consumer repo remains responsible for its own build and deployment checks.
 jobs:
   brand-quality:
-    uses: skunkworks-africa/brand/.github/workflows/brand-pilot.yml@ea574ce06e84d34300e3e711122d76d7345e7e8e
+    uses: skunkworks-africa/brand/.github/workflows/brand-pilot.yml@dad0361c436db79977c5f0cd2dcf77044d041c4a
     with:
       profile: theme
