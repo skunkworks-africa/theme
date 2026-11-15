@@ -1,0 +1,12 @@
+name: Brand quality pilot
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  brand-quality:
+    uses: skunkworks-africa/brand/.github/workflows/brand-pilot.yml@ea574ce06e84d34300e3e711122d76d7345e7e8e
+    with:
+      profile: theme
